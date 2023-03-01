@@ -1,9 +1,35 @@
 <?xml version="1.0" encoding="utf-8"?>
-<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
 
-    <item android:title="Item" />
-    <item android:title="Item1" />
-    <item android:title="Item2" />
-    <item android:title="Item3" />
-    <item android:title="Item4" />
+    <item
+        android:id="@+id/nav_home"
+        android:icon="@drawable/nav_home"
+        android:title="Home"
+        />
+
+    <item
+        android:id="@+id/nav_preferences"
+        android:icon="@drawable/nav_home"
+        android:title="Preferences"
+        />
+
+    <item
+        android:id="@+id/nav_overview"
+        android:icon="@drawable/nav_home"
+        android:title="Overview"
+        />
+
+    <item
+        android:id="@+id/nav_feedback"
+        android:icon="@drawable/nav_home"
+        android:title="Feedback"
+        />
+
+    <item
+        android:id="@+id/nav_settings"
+        android:icon="@drawable/nav_home"
+        android:title="Settings"
+        />
 </menu>
