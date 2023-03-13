@@ -22,7 +22,7 @@
         android:id="@+id/dim_screen_switch"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="84dp"
         android:text="Dim Screen"
         android:textColor="#FFFFFF"
         android:textSize="42sp"
@@ -56,21 +56,6 @@
         app:layout_constraintHorizontal_bias="0.517"
         app:layout_constraintStart_toStartOf="@+id/timer_switch"
         app:layout_constraintTop_toBottomOf="@+id/timer_switch" />
-
-    <Switch
-        android:id="@+id/windy_switch"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:text="WindyPlaylist"
-        android:textColor="#FFFFFF"
-        android:textSize="42sp"
-        app:layout_constraintBottom_toBottomOf="@+id/imageView2"
-        app:layout_constraintEnd_toEndOf="@+id/rainy_switch"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/rainy_switch"
-        app:layout_constraintTop_toBottomOf="@+id/rainy_switch"
-        app:layout_constraintVertical_bias="0.226" />
 
     <ImageView
         android:id="@+id/imageView2"

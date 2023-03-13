@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#0D3B66"
-    tools:context=".ui.FavoriteFragment">
+    tools:context=".ui.PreferenceFragment">
 
     <ImageView
         android:id="@+id/imageView3"

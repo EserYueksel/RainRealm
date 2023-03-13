@@ -8,7 +8,7 @@ import android.view.ViewGroup
 import com.yueksel.rainrealm.R
 
 
-class FavoriteFragment : Fragment() {
+class PreferenceFragment : Fragment() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

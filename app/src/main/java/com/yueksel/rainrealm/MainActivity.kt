@@ -8,8 +8,6 @@ import android.view.MenuItem
 import android.widget.Toolbar
 import androidx.core.view.GravityCompat
 import androidx.drawerlayout.widget.DrawerLayout
-import androidx.navigation.NavController
-import androidx.navigation.NavDestination
 import androidx.navigation.findNavController
 import androidx.navigation.ui.*
 import com.google.android.material.navigation.NavigationView
@@ -30,10 +28,12 @@ class MainActivity : AppCompatActivity(),NavigationView.OnNavigationItemSelected
         val navView: NavigationView = findViewById(R.id.nav_view)
         val navController = findNavController(R.id.nav_host_fragment)
 
-        appBarConfiguration = AppBarConfiguration(setOf(R.id.home,
+        appBarConfiguration = AppBarConfiguration(setOf(
+            R.id.home,
             R.id.settings,
-            R.id.favorite,
+            R.id.preferences,
             R.id.feedback,
+            R.id.overview,
             R.id.splash),drawerLayout)
 
         setupActionBarWithNavController(navController,appBarConfiguration)
@@ -53,10 +53,10 @@ class MainActivity : AppCompatActivity(),NavigationView.OnNavigationItemSelected
                 findNavController(R.id.nav_host_fragment).navigate(R.id.home)
             }
             R.id.nav_preferences -> {
-                // Handle the gallery action
+                findNavController(R.id.nav_host_fragment).navigate(R.id.preferences)
             }
             R.id.nav_overview -> {
-                // Handle the slideshow action
+                findNavController(R.id.nav_host_fragment).navigate(R.id.overview)
             }
             R.id.nav_feedback -> {
                 findNavController(R.id.nav_host_fragment).navigate(R.id.feedback)

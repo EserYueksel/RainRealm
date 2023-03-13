@@ -5,6 +5,8 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Button
+import android.widget.EditText
 import com.yueksel.rainrealm.R
 
 class FeedbackFragment : Fragment() {
@@ -21,4 +23,16 @@ class FeedbackFragment : Fragment() {
         return inflater.inflate(R.layout.fragment_feedback, container, false)
     }
 
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+
+        val feedbackEditText = view.findViewById<EditText>(R.id.feedback_txt)
+        val submitButton = view.findViewById<Button>(R.id.submit_btn)
+
+        submitButton.setOnClickListener {
+            // Handle submit button click here
+        }
+    }
 }
+
+
